@@ -1,0 +1,55 @@
+.NavBar {
+    width: 100%;
+    background-color: #212121;
+    height: 107px;
+    text-align: center;
+}
+
+.NavItems {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    height: 107px;
+}
+
+.Link {
+    text-decoration: none;
+    color: #E5E5E5;
+    font-size: 28px;
+    font-weight: lighter;
+    width: 136px;
+    padding-top:35px
+}
+
+.CenterLogo {
+    margin-top: 5px;
+    width: 368px;
+    padding: 0 15px;
+    color: #FDFEFE;
+}
+
+.Est {
+    margin: 0;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.LogoHeader {
+    margin: 0;
+    width: 368px;
+    font-size: 36px;
+    font-family: 'Lily Script One', cursive;
+}
+
+.Smithfield {
+    margin: 0 50px;
+    display: flex;
+    font-weight: lighter;
+}
+
+.SmithfieldHr {
+    width: 46px;
+    height: 0;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
