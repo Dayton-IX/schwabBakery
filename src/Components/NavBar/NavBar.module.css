@@ -18,7 +18,31 @@
     font-size: 28px;
     font-weight: lighter;
     width: 136px;
-    padding-top:35px
+    padding-top: 35px;
+    transition: all .5s;
+}
+
+.ActiveUnderline {
+    display: none;
+    transition: all .5s;
+}
+
+.Link:hover {
+    color: #FFFFFF;
+    transition: all .5s;
+}
+
+.ActiveLink {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.ActiveLink .ActiveUnderline {
+    display: block;
+    margin-top: 0;
+    color: #FFFFFF;
+    width: 93px;
+    transition: all .5s;
 }
 
 .CenterLogo {
