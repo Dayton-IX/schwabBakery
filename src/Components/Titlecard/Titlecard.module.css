@@ -1,0 +1,27 @@
+.Titlecard {
+    width: 100%;
+    height: 392px;
+    margin: 0;
+    background-image: url('../../assets/titlecardBread.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.TaglineCard {
+    background-color: #F8E289;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 650px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.Tagline {
+    color: #283747;
+    font-size: 72px;
+    font-family: 'Concert One', cursive;
+    margin: 0;
+    line-height: 60px;
+}
