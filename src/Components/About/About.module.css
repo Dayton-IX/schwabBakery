@@ -1,0 +1,12 @@
+.About {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.AboutHeader {
+    font-family: 'Lily Script One', cursive;
+    font-size: 72px;
+    margin-left: 20px;
+    display: flex;
+    margin-bottom: 30px;
+}

@@ -13,9 +13,10 @@
     top: 0;
     left: 0;
     height: 200px;
-    width: 650px;
+    width: 630px;
     padding-top: 10px;
     padding-left: 30px;
+    border-radius: 0 0 300px 0;
 }
 
 .Tagline {
