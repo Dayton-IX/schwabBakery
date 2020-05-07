@@ -10,3 +10,32 @@
     display: flex;
     margin-bottom: 30px;
 }
+
+.AboutSection {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.AboutText {
+    margin-left: 15px;
+    margin-top: -40px;
+}
+
+.AboutImgBackground {
+    width: 467px;
+    height: 377px;
+    border-radius: 5px;
+    background-color: #FCF2CC;
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 30px;
+}
+
+.AboutImg {
+    width: 450px;
+    height: 360px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
