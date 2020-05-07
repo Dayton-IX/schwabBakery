@@ -3,6 +3,7 @@ import classes from './App.module.css';
 import NavBar from './Components/NavBar/NavBar';
 import Titlecard from './Components/Titlecard/Titlecard';
 import About from './Components/About/About';
+import Menu from './Components/Menu/Menu';
 
 class App extends Component {
     render() {
@@ -11,6 +12,7 @@ class App extends Component {
 				<NavBar />
 				<Titlecard />
 				<About />
+				<Menu />
 			</div>
 		)
 	}

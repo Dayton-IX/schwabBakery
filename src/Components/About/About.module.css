@@ -1,6 +1,7 @@
 .About {
     max-width: 1500px;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .AboutHeader {
@@ -9,6 +10,7 @@
     margin-left: 20px;
     display: flex;
     margin-bottom: 30px;
+    justify-content: space-between;
 }
 
 .AboutSection {
