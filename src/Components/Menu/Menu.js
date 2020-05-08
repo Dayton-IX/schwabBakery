@@ -7,8 +7,8 @@ const Menu = (props) => (
         <h1 className={classes.MenuHeader}>Menu <span className="sectionLine"><div className="circle"></div><hr className="sectionHr"/><div className="circle"></div></span></h1>
         <div className={classes.MenuNav}>
             <div className={classes.MenuNavItems}>
-                <NavLink to="/bread" className={classes.MenuLink} activeClassName={classes.MenuLinkActive} >Bread</NavLink>
-                <NavLink to="/desserts" className={classes.MenuLink} activeClassName={classes.MenuLinkActive} >Desserts</NavLink>
+                <NavLink to={{pathname: '/menu/bread'}} exact className={classes.MenuLink} activeClassName={classes.MenuLinkActive} >Bread</NavLink>
+                <NavLink to={{pathname: '/menu/desserts'}} exact className={classes.MenuLink} activeClassName={classes.MenuLinkActive} >Desserts</NavLink>
             </div>
         </div>
     </div>
