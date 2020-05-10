@@ -23,6 +23,18 @@
 .AboutText {
     margin-left: 15px;
     margin-top: -40px;
+    font-size: 21px;
+}
+
+.AboutText a {
+    text-decoration: none;
+    color: #5dade2;
+    transition: all .5s;
+}
+
+.AboutText a:hover {
+    color: #2980b9;
+    transition: all .5s;
 }
 
 .AboutImgBackground {
