@@ -18,7 +18,7 @@ code {
 		monospace;
 }
 
-a {
+a, button {
 	outline: none;
 }
 
