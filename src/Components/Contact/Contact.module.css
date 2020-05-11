@@ -17,3 +17,15 @@
     margin-bottom: 30px;
     justify-content: space-between;
 }
+
+.ContactMain {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.ContactImg {
+    width: 730px;
+    height: 395px;
+    object-fit: cover;
+    border-radius: 5px;
+}
