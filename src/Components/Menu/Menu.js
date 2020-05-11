@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classes from './Menu.module.css';
 import breadPlaceholder from '../../assets/breadPlaceholder.jpg';
+import morePlaceholder from '../../assets/morePlaceholder.jpg';
 import BreadItems from './BreadItems/BreadItems';
 import MoreItems from './MoreItems/MoreItems';
 
@@ -32,7 +33,7 @@ class Menu extends Component {
                     <div className={classes.MenuItems} >
                         {this.state.breadActive ? <BreadItems /> : <MoreItems />}
                     </div>
-                    <img className={classes.MenuImg} src={breadPlaceholder} alt="bread" />
+                    { this.state.breadActive ? <img className={classes.MenuImg} src={breadPlaceholder} alt="bread" /> : <img className={classes.MenuImg} src={morePlaceholder} alt="dessert breads" />}
                 </div>
             </div>
         )
