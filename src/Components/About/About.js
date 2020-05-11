@@ -4,7 +4,7 @@ import bread from '../../assets/ovenBread.png';
 import { NavLink } from 'react-router-dom';
 
 const About = (props) => (
-    <div className={classes.About}>
+    <div className={classes.About} id="about">
         <h1 className={classes.AboutHeader}>About Us <span className="sectionLine"><div className="circle"></div><hr className="sectionHr"/><div className="circle"></div></span></h1>
         <div className={classes.AboutSection}>
             <div className={classes.AboutText}>

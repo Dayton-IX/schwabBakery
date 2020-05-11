@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Titlecard from './Components/Titlecard/Titlecard';
 import About from './Components/About/About';
 import Menu from './Components/Menu/Menu';
+import Contact from './Components/Contact/Contact';
 
 class App extends Component {
     render() {
@@ -13,6 +14,7 @@ class App extends Component {
 				<Titlecard />
 				<About />
 				<Menu />
+				<Contact />
 			</div>
 		)
 	}
