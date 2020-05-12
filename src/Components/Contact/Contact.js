@@ -38,8 +38,8 @@ class Contact extends Component {
                         <form className={classes.ContactForm}>
                             <input type="text" className={classes.ContactInput} placeholder="Name" value={this.state.name} onChange={(e) => this.handleNameChange(e)}/>
                             <input type="email" className={classes.ContactInput} placeholder="Email" value={this.state.email} onChange={(e) => this.handleEmailChange(e)}/>
-                            <input type="text" className={classes.ContactMessage} placeholder="Message" value={this.state.message} onChange={(e) => this.handleMessageChange(e)}/>
-                            <input type="submit" value="Send" className={classes.ContactButton} />
+                            <textarea name="message" className={classes.ContactMessage} cols="30" rows="10" placeholder="Message" value={this.state.message} onChange={(e) => this.handleMessageChange(e)}></textarea>
+                            <input type="submit" value="Send Us An Email!" className={classes.ContactButton} />
                         </form>
                         <img className={classes.ContactImg} src={contactPlaceholder} alt="cinnamon rolls" />
                     </div>

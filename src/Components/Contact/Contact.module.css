@@ -21,6 +21,7 @@
 .ContactMain {
     display: grid;
     grid-template-columns: 40% 60%;
+    margin-left: 30px;
 }
 
 .ContactImg {
@@ -28,4 +29,52 @@
     height: 395px;
     object-fit: cover;
     border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-top: -50px;
+}
+
+.ContactInput {
+    background-color: #ffffff;
+    width: 572px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans';
+}
+
+.ContactMessage {
+    background-color: #ffffff;
+    width: 572px;
+    height: 144px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans';
+    resize: none;
+    scrollbar-width: thin;
+    scrollbar-color: #212121 #ffffff;
+}
+
+.ContactButton {
+    height: 44px;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 24px;
+    background-color: #212121;
+    color: #85C1E9;
+    border: 1px solid #85C1E9;
+    transition: all .2s ;
+}
+
+.ContactButton:hover {
+    background-color: #85C1E9;
+    color: #ffffff;
+    transition: all .2s ;
 }
