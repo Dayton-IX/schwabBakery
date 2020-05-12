@@ -1,26 +1,10 @@
 import React, { Component } from 'react';
 import classes from './NavBar.module.css';
-import { NavLink } from 'react-router-dom';
 
 class NavBar extends Component {
-    state = {
-        scrolled: false
-    }
-
-    componentDidMount() {
-        window.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 1;
-            if (isTop !== true) {
-                this.setState({scrolled: true});
-            } else {
-                this.setState({scrolled: false});
-            }
-        });
-    }
-
     render() {
         return (
-            <div className={this.state.scrolled ? classes.StickyNavBar : classes.NavBar}>
+            <div className={this.props.scrolled ? classes.StickyNavBar : classes.NavBar}>
                 <div className={classes.NavItems}>
                     <a className={classes.Link} href='/' exact>Home <hr className={classes.ActiveUnderline} /></a>
                     <a className={classes.Link} href='#about'>About <hr className={classes.ActiveUnderline} /></a>

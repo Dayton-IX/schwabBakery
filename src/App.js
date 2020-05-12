@@ -5,14 +5,27 @@ import Titlecard from './Components/Titlecard/Titlecard';
 import About from './Components/About/About';
 import Menu from './Components/Menu/Menu';
 import Contact from './Components/Contact/Contact';
-import { Route } from 'react-router-dom';
 
 class App extends Component {
+	state = {
+        scrolled: false
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', () => {
+            const isTop = window.scrollY < 1;
+            if (isTop !== true) {
+                this.setState({scrolled: true});
+            } else {
+                this.setState({scrolled: false});
+            }
+        });
+	}
     render() {
 		return (
 			<div className={classes.App}>
-				<NavBar />
-				<Titlecard />
+				<NavBar scrolled={this.state.scrolled} />
+				<Titlecard scrolled={this.state.scrolled} />
 				<About />
 				<Menu />
 				<Contact />
