@@ -53,3 +53,24 @@
     border-radius: 5px;
     margin-top: 10px;
 }
+
+@media screen and (max-width: 1230px) {
+    .AboutSection {
+        display: block;
+    }
+
+    .AboutHeader {
+        margin-bottom: 40px;
+    }
+
+    .AboutImgBackground {
+        background-color: transparent;
+        width: 100%;
+        margin: 0;
+    }
+
+    .AboutImg {
+        width: 100%;
+        object-fit: cover;
+    }
+}
