@@ -29,3 +29,40 @@
     margin: 0;
     margin-top: -15px;
 }
+
+@media screen and (max-width: 1256px) {
+    .MenuItem {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #212121;
+    }
+
+    .MenuPriceLine {
+        display: block;
+    }
+
+    .MenuItemHr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .MenuItem {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 20px;
+        border: none;
+    }
+
+    .MenuPriceLine {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    .MenuItemHr {
+        display: block;
+        width: 90%;
+    }
+}
