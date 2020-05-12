@@ -1,6 +1,7 @@
 .Contact {
     width: 100%;
     background-color: #212121;
+    padding-bottom: 30px;
 }
 
 .ContactContent {
@@ -31,7 +32,7 @@
     border-radius: 5px;
     margin-left: 50px;
     margin-bottom: 30px;
-    margin-top: -50px;
+    margin-top: -80px;
 }
 
 .ContactInput {
@@ -71,10 +72,47 @@
     color: #85C1E9;
     border: 1px solid #85C1E9;
     transition: all .2s ;
+    font-family: 'Open Sans';
+    font-weight: lighter;
 }
 
 .ContactButton:hover {
     background-color: #85C1E9;
     color: #ffffff;
     transition: all .2s ;
+}
+
+.FollowUs {
+    background-color: #FCF2CC;
+    height: 70px;
+    border-radius: 5px;
+    width: 330px;
+    display: flex;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+
+.FollowUsText {
+    font-size: 24px;
+    color: #212121;
+    font-weight: lighter;
+    margin: 0;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.FollowUsLink {
+    text-decoration: none;
+    color: #85C1E9;
+    transition: all .5s;
+}
+
+.FollowUsLink:hover {
+    color: #2980b9;
+    transition: all .5s;
+}
+
+.Instagram {
+    width: 80px;
+    margin-left: 10px;
 }
