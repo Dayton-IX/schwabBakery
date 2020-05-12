@@ -5,6 +5,7 @@ import Titlecard from './Components/Titlecard/Titlecard';
 import About from './Components/About/About';
 import Menu from './Components/Menu/Menu';
 import Contact from './Components/Contact/Contact';
+import { Route } from 'react-router-dom';
 
 class App extends Component {
     render() {

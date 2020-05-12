@@ -21,7 +21,7 @@ class Menu extends Component {
 
     render() {
         return (
-            <div className={classes.Menu}>
+            <div className={classes.Menu} id="menu">
                 <h1 className={classes.MenuHeader}>Menu <span className="sectionLine"><div className="circle"></div><hr className="sectionHr"/><div className="circle"></div></span></h1>
                 <div className={classes.MenuNav}>
                     <div className={classes.MenuNavItems}>

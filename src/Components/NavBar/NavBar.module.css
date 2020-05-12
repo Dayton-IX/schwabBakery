@@ -3,6 +3,40 @@
     background-color: #212121;
     height: 107px;
     text-align: center;
+    transition: all .5s;
+}
+
+.StickyNavBar {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #212121;
+    text-align: center;
+    transition: all .5s;
+    top: 0;
+}
+
+.StickyNavBar .Est, .StickyNavBar .Smithfield, .StickyNavBar .SmithfieldHr {
+    display: none;
+    transition: all .5s;
+}
+
+.StickyNavBar .NavItems {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    height: 60px;
+    transition: all .5s;
+}
+
+.StickyNavBar .Link {
+    text-decoration: none;
+    color: #E5E5E5;
+    font-size: 28px;
+    font-weight: lighter;
+    width: 136px;
+    padding-top: 10px;
+    transition: all .5s;
 }
 
 .NavItems {
@@ -30,6 +64,7 @@
 .Link:hover {
     color: #FFFFFF;
     transition: all .5s;
+    background-color: #000000;
 }
 
 .ActiveLink {
@@ -50,12 +85,14 @@
     width: 368px;
     padding: 0 15px;
     color: #FDFEFE;
+    transition: all .5s;
 }
 
 .Est {
     margin: 0;
     font-size: 14px;
     font-weight: lighter;
+    transition: all .5s;
 }
 
 .LogoHeader {
@@ -63,12 +100,14 @@
     width: 368px;
     font-size: 36px;
     font-family: 'Lily Script One', cursive;
+    transition: all .5s;
 }
 
 .Smithfield {
     margin: 0 50px;
     display: flex;
     font-weight: lighter;
+    transition: all .5s;
 }
 
 .SmithfieldHr {
@@ -76,10 +115,19 @@
     height: 0;
     color: #FFFFFF;
     margin-top: 10px;
+    transition: all .5s;
 }
 
 @media screen and (max-width: 1100px){
     .NavItems {
+        width: 100%;
+    }
+
+    .CenterLogo, .StickyNavBar .CenterLogo {
+        padding: 0;
+    }
+
+    .StickyNavBar .NavItems {
         width: 100%;
     }
 }
