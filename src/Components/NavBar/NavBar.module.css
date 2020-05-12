@@ -77,3 +77,18 @@
     color: #FFFFFF;
     margin-top: 10px;
 }
+
+@media screen and (max-width: 1100px){
+    .NavItems {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .CenterLogo {
+        padding: 0;
+    }
+    .Link {
+        display: none;
+    }
+}
