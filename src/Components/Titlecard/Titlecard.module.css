@@ -26,3 +26,20 @@
     margin: 0;
     line-height: 60px;
 }
+
+@media screen and (max-width: 650px){
+    .Titlecard {
+        height: auto;
+    }
+
+    .TaglineCard {
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .Tagline {
+        font-size: 60px;
+    }
+}

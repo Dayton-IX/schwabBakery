@@ -41,3 +41,9 @@ a, button {
 	color: #000000;
 	margin: 5px;
 }
+
+@media screen and (max-width: 1480px) {
+	.sectionLine {
+		display: none;
+	}
+}
