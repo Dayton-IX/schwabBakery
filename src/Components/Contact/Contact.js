@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classes from './Contact.module.css';
 import contactPlaceholder from '../../assets/contactPlaceholder.jpg';
+import axios from '../../secret/axios-mail';
 
 class Contact extends Component {
     state = {
@@ -26,9 +27,15 @@ class Contact extends Component {
         this.setState({sendRequest: true})
         if (this.state.name !== '' && this.state.email !== '' && this.state.message !== '') {
             this.setState({formValid: true});
-        }
-        if (this.state.formValid) {
-            
+            axios.post('/sendMail', {
+                name: this.state.name,
+                email: this.state.email,
+                message: this.state.message
+            }).then(response => {
+                console.log(response);
+            }).catch(error => {
+                console.log(error);
+            });
         }
     }
 
