@@ -7,27 +7,30 @@ class Contact extends Component {
         name: '',
         email: '',
         message: '',
-        formValid: false
+        formValid: false,
+        sendRequest: false
     }
 
     handleEmailChange = function(e) {
         this.setState({email: e.target.value})
-        if (this.state.name !== '' && this.state.email !== '' && this.state.message !== '') {
-            this.setState({formValid: true});
-        }
-      }
-      handleNameChange = function(e) {
+    }
+    handleNameChange = function(e) {
         this.setState({name: e.target.value})
-        if (this.state.name !== '' && this.state.email !== '' && this.state.message !== '') {
-            this.setState({formValid: true});
-        }
-      }
-      handleMessageChange = function(e) {
+    }
+    handleMessageChange = function(e) {
         this.setState({message: e.target.value})
+    }
+
+    mailHandler = (event) => {
+        event.preventDefault();
+        this.setState({sendRequest: true})
         if (this.state.name !== '' && this.state.email !== '' && this.state.message !== '') {
             this.setState({formValid: true});
         }
-      }
+        if (this.state.formValid) {
+            
+        }
+    }
 
     render() {
         return (
@@ -35,11 +38,11 @@ class Contact extends Component {
                 <div className={classes.ContactContent}>
                     <h2 className={classes.ContactHeader}>Contact Us</h2>
                     <div className={classes.ContactMain}>
-                        <form className={classes.ContactForm}>
+                        <form className={classes.ContactForm} onSubmit={(e) => this.mailHandler(e)}>
                             <input type="text" className={classes.ContactInput} placeholder="Name" value={this.state.name} onChange={(e) => this.handleNameChange(e)}/>
                             <input type="email" className={classes.ContactInput} placeholder="Email" value={this.state.email} onChange={(e) => this.handleEmailChange(e)}/>
                             <textarea name="message" className={classes.ContactMessage} cols="30" rows="10" placeholder="Message" value={this.state.message} onChange={(e) => this.handleMessageChange(e)}></textarea>
-                            <input type="submit" value="Send Us An Email!" className={classes.ContactButton} />
+                            <input type="submit" value="Send Us An Email!" className={classes.ContactButton} /> {this.state.sendRequest ? <div className={this.state.formValid ? classes.Success : classes.Error}>{this.state.formValid ? "Email Sent!" : "Please Fill In All Fields."}</div> : null }
                         </form>
                         <img className={classes.ContactImg} src={contactPlaceholder} alt="cinnamon rolls" />
                     </div>

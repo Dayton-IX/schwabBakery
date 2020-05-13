@@ -82,6 +82,20 @@
     transition: all .2s ;
 }
 
+.Error {
+    color: #e74c3c;
+    font-size: 24px;
+    float: right;
+    margin-top: 5px;
+}
+
+.Success {
+    color: #48c9b0;
+    font-size: 24px;
+    float: right;
+    margin-top: 5px;
+}
+
 .FollowUs {
     background-color: #FCF2CC;
     height: 70px;
