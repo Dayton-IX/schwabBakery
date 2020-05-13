@@ -52,6 +52,7 @@
     height: 360px;
     border-radius: 5px;
     margin-top: 10px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1230px) {
@@ -72,5 +73,7 @@
     .AboutImg {
         width: 100%;
         object-fit: cover;
+        object-position: 40% 40%;
+        height: 400px;
     }
 }

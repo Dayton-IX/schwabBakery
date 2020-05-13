@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classes from './Contact.module.css';
-import contactImg from '../../assets/wrappedBread.JPG';
+import contactImg from '../../assets/wrappedBread_edited.jpg';
 import axios from '../../secret/axios-mail';
 
 class Contact extends Component {

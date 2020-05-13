@@ -164,3 +164,9 @@
         width: 85%;
     }
 }
+
+@media screen and (max-width: 370px) {
+    .Instagram {
+        display: none;
+    }
+}

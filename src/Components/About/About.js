@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './About.module.css';
-import bread from '../../assets/ovenBread.png';
+import aboutImg from '../../assets/jakeandallie_edited.jpg';
 import { NavLink } from 'react-router-dom';
 
 const About = (props) => (
@@ -12,7 +12,7 @@ const About = (props) => (
                 <p className={classes.AboutP}>We bake on Tuesdays and Thursdays every week. We follow Cottage Laws for the state of Utah and each have food handler's permits. Please <NavLink to="/contact" >Contact Us</NavLink> if you are interested or have any special requests! </p>
             </div>
             <div className={classes.AboutImgBackground}>
-                <img className={classes.AboutImg} src={bread} alt="bread"/>
+                <img className={classes.AboutImg} src={aboutImg} alt="bread"/>
             </div>
         </div>
     </div>

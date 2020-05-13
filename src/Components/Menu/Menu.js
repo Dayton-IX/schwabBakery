@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classes from './Menu.module.css';
-import breadPlaceholder from '../../assets/breadPlaceholder.jpg';
-import morePlaceholder from '../../assets/morePlaceholder.jpg';
+import breadImg from '../../assets/bread_edited.jpg';
+import moreImg from '../../assets/cinnamonRolls.JPG';
 import BreadItems from './BreadItems/BreadItems';
 import MoreItems from './MoreItems/MoreItems';
 
@@ -33,7 +33,7 @@ class Menu extends Component {
                     <div className={classes.MenuItems} >
                         {this.state.breadActive ? <BreadItems /> : <MoreItems />}
                     </div>
-                    { this.state.breadActive ? <img className={classes.MenuImg} src={breadPlaceholder} alt="bread" /> : <img className={classes.MenuImg} src={morePlaceholder} alt="dessert breads" />}
+                    { this.state.breadActive ? <img className={classes.MenuImg} src={breadImg} alt="bread" /> : <img className={classes.MenuImg} src={moreImg} alt="dessert breads" />}
                 </div>
             </div>
         )
