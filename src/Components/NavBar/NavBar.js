@@ -6,7 +6,7 @@ class NavBar extends Component {
         return (
             <div className={this.props.scrolled ? classes.StickyNavBar : classes.NavBar}>
                 <div className={classes.NavItems}>
-                    <a className={classes.Link} href='/'>Home</a>
+                    <a className={classes.Link} href='#home'>Home</a>
                     <a className={classes.Link} href='#about'>About</a>
                     <span className={classes.CenterLogo}>
                         <p className={classes.Est}>EST. 2020</p>

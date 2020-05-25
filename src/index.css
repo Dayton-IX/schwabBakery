@@ -1,6 +1,7 @@
 :root {
 	scrollbar-color: #FCF2CC #212121;
 	scrollbar-width: thin;
+	scroll-behavior: smooth;
 }
 
 body {
